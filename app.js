@@ -7,6 +7,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
+const compression = require('compression');
 
 const viewRouters = require('./routes/viewRoutes');
 const tourRouters = require('./routes/tourRoutes');
@@ -95,6 +96,8 @@ app.use(
     whitelist: ['duration', 'ratingAverage', 'ratingsQuantity', 'maxGroupSize', 'difficulty', 'price'],
   })
 );
+
+app.use(compression());
 //Test middleware
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
