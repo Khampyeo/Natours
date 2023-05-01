@@ -1,0 +1,26 @@
+.user-view__content{
+  padding: 0;
+}
+
+.card-container{
+  padding: 20px ;
+  grid-gap: 20px
+}
+.card__details{
+  padding: 10px;
+}
+.card__footer{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading-tertirary{
+  font-size: 20px;
+}
+.notify--tourless{
+  padding: 50px 20px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #7dd56f;
+}
