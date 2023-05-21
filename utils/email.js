@@ -9,7 +9,6 @@ module.exports = class Email {
     this.url = url;
     this.from = `Kham <${process.env.EMAIL_FROM}>`;
   }
-
   newTransport() {
     if (process.env.NODE_ENV === 'production') {
       //SENDGRID
